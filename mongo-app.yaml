@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mongo
-        image: mongo:5.0 #path can also be given
+        image: mongo:latest #path can also be given
         ports:
         - containerPort: 27017
         env:
