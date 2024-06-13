@@ -20,12 +20,12 @@ spec:
         ports:
         - containerPort: 27017
         env:
-          -name: MONGO_INITDB_ROOT_USERNAME
+          - name: MONGO_INITDB_ROOT_USERNAME
             valueFrom:
               secretKeyRef:
                 name: mongo-secret #from the metadata
                 key: mongo-user
-          -name: MONGO_INITDB_ROOT_PASSWORD
+          - name: MONGO_INITDB_ROOT_PASSWORD #spacing matters - name hould have space
             valueFrom:
               secretKeyRef:
                 name: mongo-secret
