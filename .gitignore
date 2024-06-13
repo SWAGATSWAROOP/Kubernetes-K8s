@@ -1,0 +1,3 @@
+# Ignore all files that start with a dot
+DS_Store
+.DS_Store
